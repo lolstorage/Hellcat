@@ -1,4 +1,4 @@
-# cool rose babric fork called Hellcat
+# cool rose babric fork called Hellcat 
 ## new modules by pee'r and pooper me
 - InfiniteSign: crash an entire server idk
 - BoatFly: doesnt work. still is figuring out how to make it work
