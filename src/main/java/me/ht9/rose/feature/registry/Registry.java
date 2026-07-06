@@ -15,7 +15,7 @@ import me.ht9.rose.feature.module.modules.client.mainmenu.MainMenu;
 import me.ht9.rose.feature.module.modules.client.togglemsg.ToggleMsg;
 import me.ht9.rose.feature.module.modules.combat.aura.Aura;
 import me.ht9.rose.feature.module.modules.dupes.ChestDupe;
-import me.ht9.rose.feature.module.modules.exploit.boatfly.BoatFly;
+import me.ht9.rose.feature.module.modules.exploit.boatfly.BoatSpeed;
 import me.ht9.rose.feature.module.modules.exploit.hose.ProjectHose;
 import me.ht9.rose.feature.module.modules.exploit.fastportal.FastPortal;
 import me.ht9.rose.feature.module.modules.exploit.infdurability.InfDurability;
@@ -96,7 +96,7 @@ public final class Registry
 
         modules.add(ChestDupe.instance());
 
-        modules.add(BoatFly.instance());
+        modules.add(BoatSpeed.instance());
         modules.add(FastPortal.instance());
         modules.add(InfDurability.instance());
         modules.add(Instamine.instance());
