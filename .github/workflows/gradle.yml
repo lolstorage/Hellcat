@@ -8,8 +8,8 @@ on:
 
 jobs:
   build:
-
-    runs-on: ubuntu-latest
+    # Changed runner to Windows
+    runs-on: windows-latest
     permissions:
       contents: read
 
@@ -30,21 +30,20 @@ jobs:
           restore-keys: |
             gradle-${{ runner.os }}-
 
-      - name: Make gradlew executable, fuck you windows
-        run: chmod +x gradlew
-
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.8'
 
+      # Changed to use gradlew.bat for Windows environment
       - name: Build with Gradle Wrapper
-        run: ./gradlew build
+        run: .\gradlew.bat build
 
+      # Updated the artifact name to match Hellcat branding
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4.4.3
         with:
-          name: rose-b1.7.3
+          name: hellcat-b1.7.3
           path: build/libs/*
           if-no-files-found: error
           retention-days: 30
