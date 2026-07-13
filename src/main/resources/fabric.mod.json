@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "rose",
   "version": "${version}",
-  "name": "Hose",
-  "description": "an beta 1.7.3 babric hacked client, made with love <3",
+  "name": "hellcat",
+  "description": "better rose fork",
   "authors": [
-    "Gund4422"
+    "Lolstorage"
   ],
   "contact": {
     "homepage": "https://github.com/Gund4422/Hose",
